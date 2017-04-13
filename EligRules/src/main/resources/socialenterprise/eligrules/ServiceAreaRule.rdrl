@@ -11,4 +11,8 @@ rule "ServiceAreaRule"
 	then
 		member.setOveralleligrule1( "Member in service area. Eligible: Yes" );
 		System.out.println("Member in service area. Eligible: Yes");
+		eligrulestatusDO fact0 = new eligrulestatusDO();
+		fact0.setMemberid( memberid );
+		fact0.setRuleandresult( 'blah' );
+		insert( fact0 );
 end
