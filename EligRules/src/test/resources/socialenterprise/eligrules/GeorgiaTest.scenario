@@ -1,13 +1,66 @@
 <scenario>
-  <name>GeorgiaTest</name>
+  <name>GeorgiaTest.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <fact-data>
+      <type>MemberDO</type>
+      <fieldData>
+        <field-data>
+          <name>subage</name>
+          <value>33</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>spouseage</name>
+          <value>66</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>familysize</name>
+          <value>1</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>FPL</name>
+          <value>200</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>m</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>Georgia</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <execution-trace>
+      <executionTimeResult>19</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>regionrule</fieldName>
+          <expected>Ys</expected>
+          <actualResult>Yes</actualResult>
+          <successResult>false</successResult>
+          <explanation>[m] field [regionrule] was [Yes] expected [Ys].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>m</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+  </fixtures>
+  <lastRunResult>2017-04-13 17:31:56.316 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>socialenterprise.eligrules</packageName>
   <imports>
     <imports/>
   </imports>
-  <ksessions/>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
 </scenario>
