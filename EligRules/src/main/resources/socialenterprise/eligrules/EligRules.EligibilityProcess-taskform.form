@@ -3,124 +3,104 @@
 <property name="name" value="EligRules.EligibilityProcess-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="10" name="MemberDO_personalincomefactor" type="InputTextInteger" id="717697349">
+<field position="7" name="MemberDO_additionalyfactor" type="InputTextInteger" id="1629287575">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;personalincomefactor (MemberDO)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/personalincomefactor"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="14" name="MemberDO_subage" type="InputTextInteger" id="931520135">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;subage (MemberDO)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/subage"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="7" name="MemberDO_overalleligrule1" type="InputText" id="1794667216">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;overalleligrule1 (MemberDO)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/overalleligrule1"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="12" name="MemberDO_regionrule" type="InputText" id="230956652">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;regionrule (MemberDO)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/regionrule"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="1" name="MemberDO_additionalyfactor" type="InputTextInteger" id="1629287575">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;additionalyfactor (MemberDO)quot;"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;additionalyfactor (MemberDO)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="MemberDO/additionalyfactor"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="16" name="MemberDO_zip" type="InputTextInteger" id="989605809">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;zip (MemberDO)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/zip"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="4" name="MemberDO_familysize" type="InputTextInteger" id="1560086739">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;familysize (MemberDO)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/familysize"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="5" name="MemberDO_memberid" type="InputTextInteger" id="614588527">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;memberid (MemberDO)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/memberid"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="3" name="MemberDO_dep2age" type="InputTextInteger" id="345824147">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;dep2age (MemberDO)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/dep2age"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="0" name="MemberDO_FPL" type="InputTextInteger" id="359836450">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;FPL (MemberDO)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/FPL"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="2" name="MemberDO_dep1age" type="InputTextInteger" id="104864977">
+<field position="4" name="MemberDO_dep1age" type="InputTextInteger" id="104864977">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;dep1age (MemberDO)quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="MemberDO/dep1age"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="13" name="MemberDO_spouseage" type="InputTextInteger" id="1709529489">
+<field position="5" name="MemberDO_dep2age" type="InputTextInteger" id="345824147">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;spouseage (MemberDO)quot;"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;dep2age (MemberDO)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/spouseage"/>
+<property name="outputBinding" value="MemberDO/dep2age"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="15" name="MemberDO_totalfamilyincome" type="InputTextInteger" id="1302007246">
+<field position="6" name="MemberDO_familysize" type="InputTextInteger" id="1560086739">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;totalfamilyincome (MemberDO)quot;"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;familysize (MemberDO)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/totalfamilyincome"/>
+<property name="outputBinding" value="MemberDO/familysize"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="11" name="MemberDO_region" type="InputText" id="872012353">
+<field position="2" name="MemberDO_memberid" type="InputTextInteger" id="614588527">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;region (MemberDO)quot;"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;memberid (MemberDO)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/region"/>
-<property name="fieldClass" value="java.lang.String"/>
+<property name="outputBinding" value="MemberDO/memberid"/>
+<property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="8" name="MemberDO_overalleligrule2" type="InputText" id="1782542050">
+<field position="0" name="MemberDO_name" type="InputText" id="1511799106">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;overalleligrule2 (MemberDO)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/overalleligrule2"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="6" name="MemberDO_name" type="InputText" id="1511799106">
-<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;enquot;,quot;name (MemberDO)quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="MemberDO/name"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="9" name="MemberDO_overalleligrule3" type="InputText" id="995605417">
+<field position="8" name="MemberDO_personalincomefactor" type="InputTextInteger" id="717697349">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;overalleligrule3 (MemberDO)quot;"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;personalincomefactor (MemberDO)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="MemberDO/overalleligrule3"/>
+<property name="outputBinding" value="MemberDO/personalincomefactor"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="11" name="MemberDO_region" type="InputText" id="872012353">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;region (MemberDO)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="MemberDO/region"/>
 <property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="MemberDO_spouseage" type="InputTextInteger" id="1709529489">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;spouseage (MemberDO)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="MemberDO/spouseage"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="1" name="MemberDO_subage" type="InputTextInteger" id="931520135">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Member Agequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="MemberDO/subage"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="9" name="MemberDO_totalfamilyincome" type="InputTextInteger" id="1302007246">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;totalfamilyincome (MemberDO)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="MemberDO/totalfamilyincome"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="10" name="MemberDO_zip" type="InputTextInteger" id="989605809">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;zip (MemberDO)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="MemberDO/zip"/>
+<property name="fieldClass" value="java.lang.Integer"/>
 </field>
 <dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="MemberDO" value="socialenterprise.eligrules.MemberDO" id="MemberDO"/>
 </form>
