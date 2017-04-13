@@ -6,6 +6,7 @@ rule "calcFPLdummy1"
 	dialect "mvel"
 	ruleflow-group "calculateFPL"
 	when
-		exists (member : MemberDO( I : totalfamilyincome != null , P : personalincomefactor != null , F : familysize != null , A : additionalyfactor != null )) 
+		member : MemberDO( A : additionalyfactor != null , P : personalincomefactor != null , I : totalfamilyincome != null , F : familysize != null )
 	then
+		member.setFPL( I / (P+ (F-1) A)  );
 end
