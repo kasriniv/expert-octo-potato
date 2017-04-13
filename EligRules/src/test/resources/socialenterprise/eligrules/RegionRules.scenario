@@ -24,17 +24,17 @@
       <name>NorthernCalifornia</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>11</executionTimeResult>
+      <executionTimeResult>12</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>regionrule</fieldName>
-          <expected>Yes</expected>
-          <actualResult></actualResult>
-          <successResult>true</successResult>
-          <explanation>[m] field [regionrule] was [Yes].</explanation>
+          <expected>Yes2</expected>
+          <actualResult>Yes</actualResult>
+          <successResult>false</successResult>
+          <explanation>[m] field [regionrule] was [Yes] expected [Yes2].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -43,7 +43,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-04-13 17:13:22.363 UTC</lastRunResult>
+  <lastRunResult>2017-04-13 17:13:48.659 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>socialenterprise.eligrules</packageName>
