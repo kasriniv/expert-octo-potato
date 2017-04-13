@@ -23,20 +23,27 @@
       <name>mdo</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>21</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>overalleligrule1</fieldName>
           <expected>blah</expected>
+          <actualResult>Member in service area. Eligible: Yes</actualResult>
+          <successResult>false</successResult>
+          <explanation>[mdo] field [overalleligrule1] was [Member in service area. Eligible: Yes] expected [blah].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>mdo</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2017-04-13 15:54:31.412 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>socialenterprise.eligrules</packageName>
