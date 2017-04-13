@@ -4,6 +4,14 @@ import java.lang.Number;
 
 rule "Regionrule"
 	dialect "mvel"
+	ruleflow-group "servicearea"
 	when
+		member : MemberDO( zip in ( \"01234\, \"02345\ ) )
+		MemberDO( memberid : memberid != null )
 	then
+		member.setOveralleligrule1( "Member resides in service area. Elig:Yes" );
+		eligrulestatusDO fact0 = new eligrulestatusDO();
+		fact0.setMemberid( memberid );
+		fact0.setRuleandresult( Member resides in service area. Elig:Yes );
+		insert( fact0 );
 end
