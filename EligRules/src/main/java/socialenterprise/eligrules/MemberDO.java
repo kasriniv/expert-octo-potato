@@ -247,5 +247,25 @@ public class MemberDO implements java.io.Serializable
       this.overalleligrule3 = overalleligrule3;
       this.regionrule = regionrule;
    }
+   public String toString(){
+       return "Name"+this.name+
+      "Zip"+this.zip +
+      "memberid"+this.memberid +
+      "totalfamilyincome"+this.totalfamilyincome +
+      "personal income factor"+this.personalincomefactor +
+      "familysize"+this.familysize+
+      "addltional income factor"+this.additionalyfactor+
+      "region"+this.region+
+      "FPL"+this.FPL +
+      "subscriber age"+this.subage+
+     "spouse age"+ this.spouseage +
+      "dep1 age"+this.dep1age +
+      "dep2 age"+this.dep2age +
+      "overall elig rule 1"+this.overalleligrule1+
+      "overall elig rule 2"+this.overalleligrule2+
+      "overall elig rule 3"+this.overalleligrule3+
+      "region rule"+this.regionrule ;
+   }
+
 
 }
