@@ -33,12 +33,18 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>calculateFPL</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>15</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>FPL</fieldName>
-          <expected></expected>
+          <expected>10</expected>
+          <actualResult>0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[member] field [FPL] was [0] expected [].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -47,6 +53,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2017-04-13 16:23:44.304 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>socialenterprise.eligrules</packageName>
