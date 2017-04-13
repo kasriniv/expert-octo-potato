@@ -1,13 +1,47 @@
 <scenario>
-  <name>FPLruleTest</name>
+  <name>FPLruleTest.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <fact-data>
+      <type>MemberDO</type>
+      <fieldData>
+        <field-data>
+          <name>additionalyfactor</name>
+          <value>348</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>familysize</name>
+          <value>4</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>personalincomefactor</name>
+          <value>1005</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>totalfamilyincome</name>
+          <value>100</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>member</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>calculateFPL</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <execution-trace/>
+  </fixtures>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>socialenterprise.eligrules</packageName>
   <imports>
     <imports/>
   </imports>
-  <ksessions/>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
 </scenario>
