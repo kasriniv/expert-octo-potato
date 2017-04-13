@@ -4,6 +4,11 @@ import java.lang.Number;
 
 rule "ServiceAreaRule"
 	dialect "mvel"
+	ruleflow-group "servicearea"
 	when
+		member : MemberDO( memberid : memberid != null )
+		MemberDO( zip in ( "'1234'", "'2345'" ) )
 	then
+		member.setOveralleligrule1( "Member in service area. Eligible: Yes" );
+		System.out.println("Member in service area. Eligible: Yes");
 end
