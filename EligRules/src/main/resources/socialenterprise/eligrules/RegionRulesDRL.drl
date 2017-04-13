@@ -9,11 +9,20 @@ rule "ColoradoRegionRules"
 		member.setRegionrule( "Yes" );
 end
 
-rule "GeorgiaRegionRules"
+rule "GeorgiaRegionRulesBigfamily"
 	ruleflow-group "Georgia"
 	dialect "mvel"
 	when
-		member : MemberDO( subage > 0 , subage <= 19 , FPL <= 300 )
+		member : MemberDO( subage > 0 , subage <= 65 , FPL <= 300,familysize>1 )
+	then
+		member.setRegionrule( "Yes" );
+end
+
+rule "GeorgiaRegionRules1"
+	ruleflow-group "Georgia"
+	dialect "mvel"
+	when
+		member : MemberDO( subage > 18 , subage <= 65 , FPL <= 300,familysize<=1 )
 	then
 		member.setRegionrule( "Yes" );
 end
