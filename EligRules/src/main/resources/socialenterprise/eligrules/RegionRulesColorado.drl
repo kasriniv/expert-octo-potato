@@ -1,2 +1,19 @@
 package socialenterprise.eligrules;
 
+rule "ColoradoRegionRules"
+	ruleflow-group "Colorado"
+	dialect "mvel"
+	when
+		member : MemberDO( subage > 0 , subage <= 35 , FPL <= 300,spouseage>0,spouseage<=26 )
+	then
+		member.setRegionrule( "Yes" );
+end
+
+rule "GeorgiaRegionRules"
+	ruleflow-group "Georgia"
+	dialect "mvel"
+	when
+		member : MemberDO( subage > 0 , subage <= 19 , FPL <= 300 )
+	then
+		member.setRegionrule( "Yes" );
+end
