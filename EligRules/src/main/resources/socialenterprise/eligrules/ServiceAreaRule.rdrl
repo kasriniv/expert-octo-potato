@@ -1,0 +1,9 @@
+package socialenterprise.eligrules;
+
+import java.lang.Number;
+
+rule "ServiceAreaRule"
+	dialect "mvel"
+	when
+	then
+end
