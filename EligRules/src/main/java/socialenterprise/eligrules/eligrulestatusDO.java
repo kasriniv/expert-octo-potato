@@ -9,10 +9,13 @@ public class eligrulestatusDO implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Member ID")
+   @org.kie.api.definition.type.Label("Member ID")
    private java.lang.Integer memberid;
-   @org.kie.api.definition.type.Label(value = "Rule and result")
-   private java.util.List<java.lang.String> ruleandresult;
+   @org.kie.api.definition.type.Label(value = "ServiceAreaRule")
+   private java.lang.Boolean servicearearule;
+
+   @org.kie.api.definition.type.Label(value = "Region Rule")
+   private boolean regionrule;
 
    public eligrulestatusDO()
    {
@@ -28,21 +31,32 @@ public class eligrulestatusDO implements java.io.Serializable
       this.memberid = memberid;
    }
 
-   public java.util.List<java.lang.String> getRuleandresult()
+   public java.lang.Boolean getServicearearule()
    {
-      return this.ruleandresult;
+      return this.servicearearule;
    }
 
-   public void setRuleandresult(java.util.List<java.lang.String> ruleandresult)
+   public void setServicearearule(java.lang.Boolean servicearearule)
    {
-      this.ruleandresult = ruleandresult;
+      this.servicearearule = servicearearule;
+   }
+
+   public boolean isRegionrule()
+   {
+      return this.regionrule;
+   }
+
+   public void setRegionrule(boolean regionrule)
+   {
+      this.regionrule = regionrule;
    }
 
    public eligrulestatusDO(java.lang.Integer memberid,
-         java.util.List<java.lang.String> ruleandresult)
+         java.lang.Boolean servicearearule, boolean regionrule)
    {
       this.memberid = memberid;
-      this.ruleandresult = ruleandresult;
+      this.servicearearule = servicearearule;
+      this.regionrule = regionrule;
    }
 
 }
