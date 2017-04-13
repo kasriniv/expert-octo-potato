@@ -13,7 +13,7 @@
         </field-data>
         <field-data>
           <name>FPL</name>
-          <value>200</value>
+          <value>351</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -24,17 +24,17 @@
       <name>NorthWest</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>16</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>13</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>regionrule</fieldName>
           <expected>Yes2</expected>
-          <actualResult>Yes</actualResult>
+          <actualResult></actualResult>
           <successResult>false</successResult>
-          <explanation>[m] field [regionrule] was [Yes] expected [Yes2].</explanation>
+          <explanation>[m] field [regionrule] was [] expected [Yes2].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -43,7 +43,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-04-13 17:14:20.472 UTC</lastRunResult>
+  <lastRunResult>2017-04-13 17:14:49.0 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>socialenterprise.eligrules</packageName>
