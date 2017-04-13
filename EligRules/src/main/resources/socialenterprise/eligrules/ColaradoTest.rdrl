@@ -1,9 +1,0 @@
-package socialenterprise.eligrules;
-
-import java.lang.Number;
-
-rule "ColaradoTest"
-	dialect "mvel"
-	when
-	then
-end
