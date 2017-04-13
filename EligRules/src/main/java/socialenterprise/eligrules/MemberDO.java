@@ -12,7 +12,7 @@ public class MemberDO implements java.io.Serializable
    @org.kie.api.definition.type.Label(value = "Subscriber Name")
    private java.lang.String name;
    @org.kie.api.definition.type.Label(value = "Zip Plus Four")
-   private java.lang.Integer zip;
+   private java.lang.String zip;
    @org.kie.api.definition.type.Label(value = "Member or Subscriber ID")
    private java.lang.Integer memberid;
    @org.kie.api.definition.type.Label(value = "Total Family Income")
@@ -58,12 +58,12 @@ public class MemberDO implements java.io.Serializable
       this.name = name;
    }
 
-   public java.lang.Integer getZip()
+   public java.lang.String getZip()
    {
       return this.zip;
    }
 
-   public void setZip(java.lang.Integer zip)
+   public void setZip(java.lang.String zip)
    {
       this.zip = zip;
    }
@@ -218,7 +218,7 @@ public class MemberDO implements java.io.Serializable
       this.regionrule = regionrule;
    }
 
-   public MemberDO(java.lang.String name, java.lang.Integer zip,
+   public MemberDO(java.lang.String name, java.lang.String zip,
          java.lang.Integer memberid, java.lang.Integer totalfamilyincome,
          java.lang.Integer personalincomefactor,
          java.lang.Integer familysize, java.lang.Integer additionalyfactor,
