@@ -1,0 +1,96 @@
+package socialenterprise.eligrules;
+
+query "get member"()
+    member : MemberDO()
+end
+
+rule "ColoradoRegionRules1"
+//	ruleflow-group "Colorado"
+	dialect "mvel"
+	when
+		member : MemberDO( subage > 0 , subage <= 35 , FPL <= 300,spouseage>0,spouseage<=26,region=="Colorado" )
+	then
+		member.setRegionrule( "Yes" );
+end
+
+rule "GeorgiaRegionRulesBigfamily1"
+	//ruleflow-group "Georgia"
+	dialect "mvel"
+	when
+		member : MemberDO( subage > 0 , subage <= 65 , FPL <= 300,familysize>1,region=="Georgia" )
+	then
+		member.setRegionrule( "Yes" );
+end
+
+rule "GeorgiaRegionRules11"
+	//ruleflow-group "Georgia"
+	dialect "mvel"
+	when
+		member : MemberDO( subage > 18 , subage <= 65 , FPL <= 300,familysize<=1,region=="Georgia" )
+	then
+		member.setRegionrule( "Yes" );
+end
+
+//from row number: 1
+rule "Row 1 RegionRules2"
+	//ruleflow-group "SouthernCalifornia"
+	dialect "mvel"
+	when
+		member : MemberDO( subage > 0 , subage <= 19 , FPL <= 300,region=="SouthernCalifornia" )
+	then
+		member.setRegionrule( "Yes" );
+end
+
+//from row number: 2
+rule "Row 2 RegionRules2"
+	//ruleflow-group "NorthernCalifornia"
+	dialect "mvel"
+	when
+		member : MemberDO( subage > 0 , subage <= 19 , FPL <= 300,region=="NorthernCalifornia" )
+	then
+		member.setRegionrule( "Yes" );
+end
+
+//from row number: 3
+rule "Row 3 RegionRules2"
+//	ruleflow-group "NorthWest"
+	dialect "mvel"
+	when
+		member : MemberDO( subage > 3 , subage <= 21 , FPL <= 350,region=="NorthWest" )
+	then
+		member.setRegionrule( "Yes" );
+end
+
+//from row number: 4
+rule "Row 4 RegionRules2"
+//	ruleflow-group "Maryland"
+	dialect "mvel"
+	when
+		member : MemberDO( subage > 0 , subage <= 26 , FPL <= 300,region=="Maryland"  )
+	then
+		member.setRegionrule( "Yes" );
+end
+rule "calcFPL"
+	dialect "mvel"
+//	ruleflow-group "calculateFPL"
+	when
+		member : MemberDO( A : additionalyfactor != null , P : personalincomefactor != null , I : totalfamilyincome != null , F : familysize != null )
+	then
+		member.setFPL( I / (P+ (F-1) A) );
+end
+
+rule "ServiceAreaRule2"
+	dialect "mvel"
+	//agenda-group "servicearea"
+	when
+		member : MemberDO( memberid : memberid != null )
+		MemberDO( zip in ( "1234", "2345" ) )
+	then
+		member.setOveralleligrule1( "Member in service area. Eligible: Yes" );
+		System.out.println("Member in service area. Eligible: Yes");
+		eligrulestatusDO fact0 = new eligrulestatusDO();
+		fact0.setMemberid( memberid );
+		fact0.setServicearearule( true );
+		insert( fact0 );
+end
+

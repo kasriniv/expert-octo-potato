@@ -4,7 +4,7 @@ import java.lang.Number;
 
 rule "ServiceAreaRule"
 	dialect "mvel"
-	ruleflow-group "servicearea"
+	ruleflow-group "serviceareaold"
 	when
 		member : MemberDO( memberid : memberid != null )
 		MemberDO( zip in ( "1234", "2345" ) )
